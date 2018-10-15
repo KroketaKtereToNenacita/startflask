@@ -36,10 +36,12 @@
             <li>Je to {{s}}.</li>
         {% endfor %}
     </ul>
-
-<p>Ukázková  aplikace pro web framework <a
+ {%for i in range(1,7) %}
+ <p>asi okfů jfdg <strong>baba{{ i }} </strong></p>
+ {% endfor %}
+ <p>Ukázková  aplikace pro web framework <a
   href="http://flask.pocoo.org/">Flask</a>. </p>
-
+ <p class="odd"> {{loop.cycle}('odd', 'even')}}  </p>
 <p>Zdrojové kódy najdete na <a
   href="http://github.com/spseol/startflask/">Githubu</a>.</p>
 
