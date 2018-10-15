@@ -31,7 +31,9 @@ def index():
 @app.route('/onas/')
 def onas():
     return render_template('onas.html')
-
+@app.route('/abc/')
+def abc():
+    return render_template('abc.html')
 
 ############################################################################
 if __name__ == '__main__':
